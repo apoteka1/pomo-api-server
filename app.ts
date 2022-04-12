@@ -1,5 +1,8 @@
 import express, { Express, Request, Response } from "express";
-// import dotenv from "dotenv";
+import { getTasks } from "./controllers";
 export const app: Express = express();
+app.use(express.json());
 
-app.get("/", (req: Request, res: Response) => res.send("Hello World!"));
+app.get("/", (req: Request, res: Response) => res.send("pomodorodomop!"));
+
+app.get("/:user/tasks", getTasks);
