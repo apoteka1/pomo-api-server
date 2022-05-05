@@ -1,2 +1,2 @@
 # pomo-server
-backend for pomodoro timer 
+backend for pomodoro timer. Typescript Express API
